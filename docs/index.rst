@@ -43,11 +43,21 @@ Although using ``labels`` is usually easier:
   >>> people.add(alice, bob)
 
   >>> carl = people.create(name="Carl", age=25)
+  
+  Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'Label' object has no attribute 'create'
 
 Now we can list and filter nodes according to the labels they are associated
 to:
 
   >>> people.filter(Q("age", "gte", 30))
+  
+  Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'Q' is not defined
+
+
 
 
 Installation
